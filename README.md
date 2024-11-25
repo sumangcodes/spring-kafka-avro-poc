@@ -1,7 +1,4 @@
 # spring-kafka-avro-poc
-Here's a `README.md` file you can use for your GitHub repository to document how to work with the Avro object and API integration using Postman:
-
-```markdown
 # Doctor API Integration with Avro and JSON
 
 This repository demonstrates how to serialize and deserialize `Doctor` objects using Avro and integrate them with an API for testing via Postman.
