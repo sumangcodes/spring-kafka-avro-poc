@@ -12,7 +12,7 @@ public class ApplicationConfiguration {
     @Bean
     public MessageConverter classificationMessageConverter() {
         AvroSchemaMessageConverter converter = new AvroSchemaMessageConverter();
-        //converter.setSchema(DoctorEvent.SCHEMA$);
+        converter.setSchema(DoctorEvent.SCHEMA$);
         return converter;
     }
 }

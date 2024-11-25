@@ -1,0 +1,35 @@
+{
+  "type" : "record",
+  "name" : "DoctorEvent",
+  "namespace" : "com.example.spring_kafka_avro.event",
+  "fields" : [ {
+    "name" : "doctor",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "Doctor",
+      "namespace" : "com.example.spring_kafka_avro.dto",
+      "fields" : [ {
+        "name" : "id",
+        "type" : [ "null", {
+          "type" : "long",
+          "java-class" : "java.lang.Long"
+        } ]
+      }, {
+        "name" : "name",
+        "type" : [ "null", "string" ]
+      }, {
+        "name" : "specialty",
+        "type" : [ "null", "string" ]
+      }, {
+        "name" : "yearsOfExperience",
+        "type" : {
+          "type" : "int",
+          "java-class" : "java.lang.Integer"
+        }
+      } ]
+    } ]
+  }, {
+    "name" : "eventType",
+    "type" : [ "null", "string" ]
+  } ]
+}
