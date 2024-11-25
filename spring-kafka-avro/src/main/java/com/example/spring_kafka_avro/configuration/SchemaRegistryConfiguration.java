@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
 public class SchemaRegistryConfiguration {
     @Bean
     public SchemaRegistryClient schemaRegistryClient(
-            @Value("${spring.cloud.stream.schemaRegistryClient.endpoint}") final String endpoint) {
+            @Value("${spring.cloud.stream.kafka.binder.schemaRegistryClient.endpoint}") final String endpoint) {
         ConfluentSchemaRegistryClient client = new ConfluentSchemaRegistryClient();
         client.setEndpoint(endpoint);
         return client;
